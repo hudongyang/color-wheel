@@ -1,0 +1,10 @@
+{
+  "name": "color-wheel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jquery": "^3.3.31",
+    "jquery": "^3.4.1"
+  }
+}

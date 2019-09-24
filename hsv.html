@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hsv</title>
+	<style>
+		.slider {
+			display: flex;
+			justify-content: space-between;
+			width: 280px;
+		}
+
+		canvas {
+			margin-top: 30px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="slider">
+		<label for="hue">hue: <span>180</span></label>
+		<input type="range" name="hue" id="hue" min="0" max="360" step="1" value="180">
+	</div>
+	<div class="slider">
+		<label for="saturation">saturation: <span>1.0</span></label>
+		<input type="range" name="saturation" id="saturation" min="0" max="1.0" step="0.01" value="1">
+	</div>
+	<div class="slider">
+		<label for="value">value: <span>1.0</span></label>
+		<input type="range" name="value" id="value" min="0" max="1.0" step="0.01" value="1">
+	</div>
+	<div class="slider">
+		<label for="alpha">alpha: <span>255</span></label>
+		<input type="range" name="alpha" id="alpha" min="0" max="255" step="1" value="255">
+	</div>
+
+	<p id="rgb"></p>
+
+	<canvas id="canvas" width="100" height="100"></canvas>
+	
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="dist/hsv.js"></script>
+</body>
+</html>
